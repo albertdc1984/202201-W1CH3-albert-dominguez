@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "NunitoExtra";
+  src: url("Nunito-ExtraBold.ttf.woff");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito-Regular.ttf.woff");
+}
+* {
+  font-family: "Nunito";
+}
+.pageName {
+  font-family: "NunitoExtra";
+}

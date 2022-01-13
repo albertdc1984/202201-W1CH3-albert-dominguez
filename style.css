@@ -12,10 +12,15 @@
   margin: 0px;
   padding: 0px;
   outline: 0;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
 }
 .header {
   display: flex;
-  box-shadow: 0px 2px grey;
+  min-width: max-content;
+  box-shadow: 0px 2px #cecfc7;
   justify-content: space-between;
 }
 .logo {
@@ -25,17 +30,21 @@
   padding: 0;
   justify-self: flex-start;
 }
+.menu {
+  width: 60%;
+  justify-self: flex-end;
+  margin-right: 100px;
+}
 .menu ul {
   list-style: none;
-  margin: 0;
+
   padding: 0;
 }
 
 .menu ul li {
-  position: relative;
   float: left;
-  margin: 0;
-  padding: 5px;
+  margin: 5px;
+  padding: 0;
   border-width: 0;
 }
 .menu ul > li:hover {
@@ -44,7 +53,7 @@
 }
 .menu ul ul {
   display: none;
-  position: absolute;
+
   top: 100%;
   left: 0;
   background: orange;
@@ -71,33 +80,35 @@ a:active {
 .livedemo-menu {
   list-style-type: none;
   display: none;
-  position: absolute;
+
   padding: 0;
   float: none;
 }
 .livedemo-menu:hover {
   display: block;
-  position: relative;
+
   float: none;
 }
-.button--buy {
-  border-style: groove;
-  border-width: thin;
-  border-color: orange;
-  border-radius: 10% 10% 10% 0%;
+#button--buy {
+  border-style: solid;
+  border-width: medium;
+  border-color: #ffa500;
+  border-radius: 80px;
+  border-top-left-radius: 3px;
 }
-.button--buy:hover {
+#button--buy:hover {
   background-color: orange;
   color: white;
-  border-radius: 30%;
+  border-radius: 0% 20% 20% 20%;
 }
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .block--head {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .headertoo {
   display: flex;
@@ -113,15 +124,14 @@ a:active {
 }
 .advice {
   font-family: "NunitoExtra";
-  font-size: 60px;
+  font-size: 50px;
 }
 .view {
   display: flex;
   background-color: orange;
+  margin-right: 80px;
   text-align: center;
-  color: white;
-  border-style: groove;
-  border-radius: 10%;
+  border-radius: 0% 10% 10% 10%;
   width: 90px;
   height: 25px;
   padding: 15px;
@@ -129,17 +139,25 @@ a:active {
 .view:hover {
   background-color: white;
   color: orange;
-  border-style: groove;
-  border-radius: 10%;
+  border-style: solid;
+  border-radius: 0% 10% 10% 10%;
+}
+.image-container {
+  display: flex;
+  justify-content: space-around;
 }
 .animals {
-  border-radius: 15%;
-  max-width: 250px;
-  align-content: center;
-  margin: auto;
+  clip-path: inset(0px 80px 0px 80px);
+  max-width: 450px;
 }
 
 .animals:hover {
   content: "HOLAS";
   opacity: 80%;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 0;
 }

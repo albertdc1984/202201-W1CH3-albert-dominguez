@@ -93,7 +93,8 @@ a:active {
   border-style: solid;
   border-width: medium;
   border-color: #ffa500;
-  border-radius: 0% 20% 20% 20%;
+  border-radius: 80px;
+  border-top-left-radius: 3px;
 }
 #button--buy:hover {
   background-color: orange;
